@@ -78,11 +78,12 @@ const App = () => {
             <Card key={item.nom_de_l_ehpad || index} item={item} />
           ))}
           {donneesFiltrees.length === 0 && donnees.length > 0 && (
-            <p className="messageError">Aucun établissement ne correspond à votre recherche.</p>
+            <p className="messageError">
+              Aucun établissement ne correspond à votre recherche.
+            </p>
           )}
         </section>
       </section>
-
       <div>
         {donneesFiltrees.length > 0 &&
           nombresVisibles < donneesFiltrees.length && (
